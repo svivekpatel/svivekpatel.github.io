@@ -32,8 +32,8 @@ export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <div className={navStyles.nav}>
-      <Box bg={"#98FB98"} px={4}>
+    <div className={navStyles.nav} >
+      <Box bg={"#98FB98"} px={4}  boxShadow={"rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px"}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}
@@ -54,7 +54,10 @@ export default function Navbar() {
             </HStack>
           </HStack>
           <Flex alignItems={'center'}>
-                <Button>Resume</Button>
+            <a href="Vivek-Patel-Resume.pdf">
+              <Button >Resume</Button>
+            </a>
+                
           </Flex>
         </Flex>
 
