@@ -3,6 +3,7 @@ import Navbar from "../Components/Navbar";
 import About from "./About";
 import Github from "./Github";
 import Projects from "./Projects";
+import Skills from "./Skills";
 
 function Home(){
     return <div bg={"black"}>
@@ -10,7 +11,7 @@ function Home(){
        <About/>
        <Projects/>
        <Github/>
-       <Box w={"100%"}h={"2000px"} bg={"black"}></Box>
+       <Skills/>
     </div>
 }
 

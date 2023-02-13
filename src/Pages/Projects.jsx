@@ -43,10 +43,11 @@ function Projects() {
     <Box >  
         <Box fontSize={"50px"}>Projects</Box>
  <Container  maxW={'95%'} py={10}>
-    <Flex  gap={"10px"} columns={{ base: 1, md: 2 }}>
-    <Flex >
+    <Flex  gap={"15px"} columns={{ base: 1, md: 2 }}>
+    <Flex boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px">
         <Image
           p={"15px"}
+          border={"10px solid #98FB98"}
           alt={'Image'} 
           src={
             'myntra.jpg'
@@ -88,7 +89,7 @@ function Projects() {
         
        
         </Stack>
-        <Flex w={"100%"} justifyContent={"end"} >
+        <Flex w={"100%"} justifyContent={"end"}  >
         <Button color={'black'}
           fontWeight={600}
           fontSize={'sm'}
@@ -111,7 +112,7 @@ function Projects() {
   </Container>
 {/* toggl */}
   <Container  maxW={'90%'} py={10}>
-    <Flex  gap={"10px"} columns={{ base: 1, md: 2 }}>
+    <Flex  gap={"15px"} columns={{ base: 1, md: 2 }}>
       <Stack spacing={5} rounded={'md'} p={"15px"} boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"}>
        
         <Heading>Toggl-Track Clone</Heading>
@@ -165,9 +166,10 @@ function Projects() {
         </Flex>
        
       </Stack>
-      <Flex >
+      <Flex boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px" >
         <Image
           p={"15px"}
+          border={"10px solid #98FB98"}
           alt={'Image'} 
           src={
             'toggl2.jpg'
@@ -178,10 +180,11 @@ function Projects() {
   </Container>
 {/* shine */}
   <Container  maxW={'95%'} py={10}>
-    <Flex  gap={"10px"} columns={{ base: 1, md: 2 }}>
-    <Flex >
+    <Flex  gap={"15px"} columns={{ base: 1, md: 2 }}>
+    <Flex boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px" >
         <Image
           p={"15px"}
+          border={"10px solid #98FB98"}
           alt={'Image'} 
           src={
             'shine2.jpg'
@@ -246,7 +249,7 @@ function Projects() {
   </Container>
 {/* trips */}
 <Container  maxW={'90%'} py={10}>
-    <Flex  gap={"10px"} columns={{ base: 1, md: 2 }}>
+    <Flex  gap={"15px"} columns={{ base: 1, md: 2 }}>
       <Stack spacing={5} rounded={'md'} p={"15px"} boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"}>
        
         <Heading>TripVillas Clone</Heading>
@@ -300,8 +303,9 @@ function Projects() {
         </Flex>
        
       </Stack>
-      <Flex >
+      <Flex boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px" >
         <Image
+        border={"10px solid #98FB98"}
           p={"15px"}
           alt={'Image'} 
           src={

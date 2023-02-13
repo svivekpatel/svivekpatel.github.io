@@ -54,7 +54,7 @@ export default function Navbar() {
             </HStack>
           </HStack>
           <Flex alignItems={'center'}>
-            <a href="Vivek-Patel-Resume.pdf">
+          <a href="Vivek-Patel-Resume.pdf" target="_blank" download>
               <Button >Resume</Button>
             </a>
                 
