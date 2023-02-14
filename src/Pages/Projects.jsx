@@ -19,13 +19,14 @@ import {
     StackDivider,
     Icon,
     useColorModeValue,
+    Link,
   } from '@chakra-ui/react';
   
 
 function Projects() {
     const Feature = ({ text, icon, iconBg }) => {
         return (
-          <Stack direction={'row'} align={'center'}> 
+          <Stack id="projects" direction={'row'} align={'center'}> 
             <Flex
               w={8}
               h={8}
@@ -40,14 +41,13 @@ function Projects() {
         );
       };
   return (
-    <Box pb={{ base: "20px", md: "30px", lg: "100px" }} backgroundImage={"https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGRldmVsb3BlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60"}>  
-        <Box fontSize={"50px"} color={"gray.300"} fontWeight={"bold"} mb={"30px"}><u>Projects</u></Box>
- <Container maxW={'95%'} py={10}>
+    <Box pb={{ base: "20px", md: "30px", lg: "100px" }} >  
+        <Box fontSize={"50px"} fontWeight={"bold"} mb={"30px"}><u>Projects</u></Box>
+ <Container className="project-card" maxW={'95%'} py={10}>
     <Flex  gap={"15px"} columns={{ base: 1, md: 2 }}>
     <Flex boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px" >
         <Image
           p={"15px"}
-          bgColor={"black"}
           border={"10px solid #98FB98"}
           alt={'Image'} 
           src={
@@ -55,10 +55,10 @@ function Projects() {
           }
         />
       </Flex>
-      <Stack spacing={5} rounded={'md'} p={"15px"} boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"} backgroundColor={"white"} >
+      <Stack className="project-tech-stack" spacing={5} rounded={'md'} p={"15px"} boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"} backgroundColor={"white"} >
        
-        <Heading>Myntra Clone</Heading>
-        <Text color={'gray.500'} fontSize={'lg'}>
+        <Heading className="project-title">Myntra Clone</Heading>
+        <Text color={'gray.500'} fontSize={'lg'} className="project-description">
         Myntra is an online fashion and lifestyle products store. Best online shopping site in India for fashion.
         </Text>
         <Stack
@@ -91,13 +91,17 @@ function Projects() {
        
         </Stack>
         <Flex w={"100%"} justifyContent={"end"}  >
-        <Button color={'black'}
+          <Link className="project-deployed-link" href='https://fashionmantra.netlify.app/' target="_blank">
+          <Button color={'black'}
           fontWeight={600}
           fontSize={'sm'}
           bg={"#98FB98"}
           mr={"20px"}
           p={5}
           rounded={'5px'}>LIVE</Button>
+          </Link>
+        
+        <Link className="project-github-link" href='https://github.com/Navneetcode1/animated-plants-4461' target="_blank">
         <Button color={'black'}
           fontWeight={600}
           fontSize={'sm'}
@@ -105,6 +109,8 @@ function Projects() {
           mr={"20px"}
           p={5}
           rounded={'5px'}>GITHUB</Button>
+        </Link>
+        
         </Flex>
        
       </Stack>
@@ -112,15 +118,16 @@ function Projects() {
     </Flex>
   </Container>
 {/* toggl */}
-  <Container  maxW={'90%'} py={10}>
+  <Container className="project-card" maxW={'90%'} py={10}>
     <Flex  gap={"15px"} columns={{ base: 1, md: 2 }}>
       <Stack spacing={5} rounded={'md'} p={"15px"} boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"} backgroundColor={"white"} >
        
-        <Heading>Toggl-Track Clone</Heading>
-        <Text color={'gray.500'} fontSize={'lg'}>
+        <Heading className="project-title">Toggl-Track Clone</Heading>
+        <Text color={'gray.500'} fontSize={'lg'} className="project-description">
         Toggl Track is a time tracking app that allows you to track your daily activities across different platforms.
         </Text>
         <Stack
+          className="project-tech-stack"
           spacing={4}
           divider={
             <StackDivider
@@ -150,27 +157,32 @@ function Projects() {
        
         </Stack>
         <Flex w={"100%"} justifyContent={"end"} >
-        <Button color={'black'}
+          <Link className="project-deployed-link" href='https://chic-melba-1f8f2e.netlify.app' target="_blank">
+          <Button color={'black'}
           fontWeight={600}
           fontSize={'sm'}
           bg={"#98FB98"}
           mr={"20px"}
           p={5}
           rounded={'5px'}>LIVE</Button>
-        <Button color={'black'}
+          </Link>
+        
+          <Link className="project-github-link" href='https://github.com/svivekpatel/hanging-teeth-7136' target="_blank">
+          <Button color={'black'}
           fontWeight={600}
           fontSize={'sm'}
           bg={"#98FB98"}
           mr={"20px"}
           p={5}
           rounded={'5px'}>GITHUB</Button>
+          </Link>
+        
         </Flex>
        
       </Stack>
       <Flex boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px" >
         <Image
           p={"15px"}
-          bgColor={"black"}
           border={"10px solid #98FB98"}
           alt={'Image'} 
           src={
@@ -181,12 +193,11 @@ function Projects() {
     </Flex>
   </Container>
 {/* shine */}
-  <Container  maxW={'95%'} py={10}>
+  <Container className="project-card" maxW={'95%'} py={10}>
     <Flex  gap={"15px"} columns={{ base: 1, md: 2 }}>
     <Flex boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px" >
         <Image
           p={"15px"}
-          bgColor={"black"}
           border={"10px solid #98FB98"}
           alt={'Image'} 
           src={
@@ -196,11 +207,12 @@ function Projects() {
       </Flex>
       <Stack spacing={5} rounded={'md'} p={"15px"} boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"} backgroundColor={"white"} >
        
-        <Heading>Shine.com Clone</Heading>
-        <Text color={'gray.500'} fontSize={'lg'}>
+        <Heading className="project-title">Shine.com Clone</Heading>
+        <Text color={'gray.500'} fontSize={'lg'} className="project-description">
         Shine.com is an innovative and 2nd-largest, fastest growing online job and recruitment portal in India.
         </Text>
         <Stack
+          className="project-tech-stack"
           spacing={4}
           divider={
             <StackDivider
@@ -230,20 +242,24 @@ function Projects() {
        
         </Stack>
         <Flex w={"100%"} justifyContent={"end"} >
-        <Button color={'black'}
+          <Link className="project-deployed-link" href='https://cheery-moxie-0773fa.netlify.app/' target="_blank">
+          <Button color={'black'}
           fontWeight={600}
           fontSize={'sm'}
           bg={"#98FB98"}
           mr={"20px"}
           p={5}
           rounded={'5px'}>LIVE</Button>
-        <Button color={'black'}
+          </Link>
+          <Link className="project-github-link" href='https://github.com/mukta112/shine.com-clone' target="_blank">
+          <Button color={'black'}
           fontWeight={600}
           fontSize={'sm'}
           bg={"#98FB98"}
           mr={"20px"}
           p={5}
           rounded={'5px'}>GITHUB</Button>
+          </Link>
         </Flex>
        
       </Stack>
@@ -251,15 +267,16 @@ function Projects() {
     </Flex>
   </Container>
 {/* trips */}
-<Container  maxW={'90%'} py={10}>
+<Container className="project-card" maxW={'90%'} py={10}>
     <Flex  gap={"15px"} columns={{ base: 1, md: 2 }}>
       <Stack spacing={5} rounded={'md'} p={"15px"} boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"} backgroundColor={"white"} >
        
-        <Heading>TripVillas Clone</Heading>
-        <Text color={'gray.500'} fontSize={'lg'}>
+        <Heading class="project-title">TripVillas Clone</Heading>
+        <Text color={'gray.500'} fontSize={'lg'} class="project-description">
         TripVillas is the Largest holiday home rental portal in Asia. with over 100000 holiday home destinations.
         </Text>
         <Stack
+          class="project-tech-stack"
           spacing={4}
           divider={
             <StackDivider
@@ -289,20 +306,26 @@ function Projects() {
        
         </Stack>
         <Flex w={"100%"} justifyContent={"end"} >
-        <Button color={'black'}
+
+        <Link class="project-deployed-link" href='https://precious-griffin-251c6b.netlify.app' target="_blank">
+          <Button color={'black'}
           fontWeight={600}
           fontSize={'sm'}
           bg={"#98FB98"}
           mll={"20px"}
           p={5}
           rounded={'5px'}>LIVE</Button>
-        <Button color={'black'}
+          </Link>
+        
+          <Link class="project-github-link" href='https://github.com/svivekpatel/big-can-5320' target="_blank">
+          <Button color={'black'}
           fontWeight={600}
           fontSize={'sm'}
           bg={"#98FB98"}
           ml={"20px"}
           p={5}
           rounded={'5px'}>GITHUB</Button>
+          </Link>
         </Flex>
        
       </Stack>
@@ -310,7 +333,6 @@ function Projects() {
         <Image
         border={"10px solid #98FB98"}
           p={"15px"}
-          bgColor={"black"}
           alt={'Image'} 
           src={
             'trips.jpg'
