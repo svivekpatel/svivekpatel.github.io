@@ -3,6 +3,7 @@ import {
     Flex,
     Heading,
     Image,
+    ScaleFade,
     Spacer,
     Stack,
     Text,
@@ -11,7 +12,7 @@ import {
 
 function About(){
     return (
-        <Stack backgroundImage={"https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGRldmVsb3BlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60"} minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
+        <Stack backgroundImage={"https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGRldmVsb3BlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60"} minH={'100vh'} direction={{ base: 'column', md: 'row' }} pb={{ base: "20px", md: "30px", lg: "100px" }}>
         <Flex p={8} flex={1} align={'center'} justify={'center'}>
           <Stack spacing={6} w={'full'} maxW={'lg'}>
             <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
@@ -30,6 +31,7 @@ function About(){
         </Flex>
         <Flex flex={1}  justify={"center"} align={"center"}>
           <Image
+         
           borderRadius={"10px"}
           border={"10px solid #98FB98"}
           boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px"

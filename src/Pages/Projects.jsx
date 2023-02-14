@@ -40,13 +40,14 @@ function Projects() {
         );
       };
   return (
-    <Box >  
-        <Box fontSize={"50px"}>Projects</Box>
- <Container  maxW={'95%'} py={10}>
+    <Box pb={{ base: "20px", md: "30px", lg: "100px" }} backgroundImage={"https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGRldmVsb3BlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60"}>  
+        <Box fontSize={"50px"} color={"gray.300"} fontWeight={"bold"} mb={"30px"}><u>Projects</u></Box>
+ <Container maxW={'95%'} py={10}>
     <Flex  gap={"15px"} columns={{ base: 1, md: 2 }}>
-    <Flex boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px">
+    <Flex boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px" >
         <Image
           p={"15px"}
+          bgColor={"black"}
           border={"10px solid #98FB98"}
           alt={'Image'} 
           src={
@@ -54,7 +55,7 @@ function Projects() {
           }
         />
       </Flex>
-      <Stack spacing={5} rounded={'md'} p={"15px"} boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"}>
+      <Stack spacing={5} rounded={'md'} p={"15px"} boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"} backgroundColor={"white"} >
        
         <Heading>Myntra Clone</Heading>
         <Text color={'gray.500'} fontSize={'lg'}>
@@ -113,7 +114,7 @@ function Projects() {
 {/* toggl */}
   <Container  maxW={'90%'} py={10}>
     <Flex  gap={"15px"} columns={{ base: 1, md: 2 }}>
-      <Stack spacing={5} rounded={'md'} p={"15px"} boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"}>
+      <Stack spacing={5} rounded={'md'} p={"15px"} boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"} backgroundColor={"white"} >
        
         <Heading>Toggl-Track Clone</Heading>
         <Text color={'gray.500'} fontSize={'lg'}>
@@ -169,6 +170,7 @@ function Projects() {
       <Flex boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px" >
         <Image
           p={"15px"}
+          bgColor={"black"}
           border={"10px solid #98FB98"}
           alt={'Image'} 
           src={
@@ -184,6 +186,7 @@ function Projects() {
     <Flex boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px" >
         <Image
           p={"15px"}
+          bgColor={"black"}
           border={"10px solid #98FB98"}
           alt={'Image'} 
           src={
@@ -191,7 +194,7 @@ function Projects() {
           }
         />
       </Flex>
-      <Stack spacing={5} rounded={'md'} p={"15px"} boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"}>
+      <Stack spacing={5} rounded={'md'} p={"15px"} boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"} backgroundColor={"white"} >
        
         <Heading>Shine.com Clone</Heading>
         <Text color={'gray.500'} fontSize={'lg'}>
@@ -250,7 +253,7 @@ function Projects() {
 {/* trips */}
 <Container  maxW={'90%'} py={10}>
     <Flex  gap={"15px"} columns={{ base: 1, md: 2 }}>
-      <Stack spacing={5} rounded={'md'} p={"15px"} boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"}>
+      <Stack spacing={5} rounded={'md'} p={"15px"} boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"} backgroundColor={"white"} >
        
         <Heading>TripVillas Clone</Heading>
         <Text color={'gray.500'} fontSize={'lg'}>
@@ -307,6 +310,7 @@ function Projects() {
         <Image
         border={"10px solid #98FB98"}
           p={"15px"}
+          bgColor={"black"}
           alt={'Image'} 
           src={
             'trips.jpg'
