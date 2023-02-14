@@ -5,7 +5,6 @@ import Contact from "./Contact";
 import Github from "./Github";
 import Projects from "./Projects";
 import Skills from "./Skills";
-
 function Home(){
     return <div bg={"black"} id="home">
        <Navbar/>

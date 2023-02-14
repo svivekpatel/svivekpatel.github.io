@@ -3,7 +3,6 @@ import React from 'react'
 import GitHubCalendar from 'react-github-calendar';
 
 
-
 const Github = () => {
   return (
     <Box  margin={"auto"} gap={"5px"} pb={{ base: "20px", md: "30px", lg: "100px" }}>

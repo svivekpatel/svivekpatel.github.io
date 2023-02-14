@@ -6,7 +6,6 @@ import { DiHtml5 } from 'react-icons/di';
 import { DiCss3 } from 'react-icons/di';
 import { SiJavascript } from 'react-icons/si';
 
-
 import {
     Container,
     Button,
@@ -271,12 +270,12 @@ function Projects() {
     <Flex  gap={"15px"} columns={{ base: 1, md: 2 }}>
       <Stack spacing={5} rounded={'md'} p={"15px"} boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"} backgroundColor={"white"} >
        
-        <Heading class="project-title">TripVillas Clone</Heading>
-        <Text color={'gray.500'} fontSize={'lg'} class="project-description">
+        <Heading className="project-title">TripVillas Clone</Heading>
+        <Text color={'gray.500'} fontSize={'lg'} className="project-description">
         TripVillas is the Largest holiday home rental portal in Asia. with over 100000 holiday home destinations.
         </Text>
         <Stack
-          class="project-tech-stack"
+          className="project-tech-stack"
           spacing={4}
           divider={
             <StackDivider
@@ -307,7 +306,7 @@ function Projects() {
         </Stack>
         <Flex w={"100%"} justifyContent={"end"} >
 
-        <Link class="project-deployed-link" href='https://precious-griffin-251c6b.netlify.app' target="_blank">
+        <Link className="project-deployed-link" href='https://precious-griffin-251c6b.netlify.app' target="_blank">
           <Button color={'black'}
           fontWeight={600}
           fontSize={'sm'}
@@ -317,7 +316,7 @@ function Projects() {
           rounded={'5px'}>LIVE</Button>
           </Link>
         
-          <Link class="project-github-link" href='https://github.com/svivekpatel/big-can-5320' target="_blank">
+          <Link className="project-github-link" href='https://github.com/svivekpatel/big-can-5320' target="_blank">
           <Button color={'black'}
           fontWeight={600}
           fontSize={'sm'}
