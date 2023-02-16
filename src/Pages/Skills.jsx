@@ -112,22 +112,22 @@ return <Box id="skills" pb={{ base: "20px", md: "30px", lg: "100px" }} >
       <SimpleGrid columns={{ base: 2, md: 4, }} spacing={"60px"}>
 
         <GridItem className="skills-card" backgroundColor={"lightgray"} _hover={{ bgColor: "white" }} margin={"auto"} justifyContent={"center"} alignItems={"center"} boxShadow={"rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 604, 60, .2) 20px 20px 20px 10px"} border={"1px solid #98FB98"} p={"30px"} borderRadius={"8px"}>
-          <Feature icon={<Image as={SiVisualstudiocode} color={"blue.600"} w={8} h={8} />} />
+          <Feature icon={<Image as={SiVisualstudiocode} className="skills-card-img" color={"blue.600"} w={8} h={8} />} />
           <Text className="skills-card-name" fontWeight={"medium"}>VS Code</Text>
         </GridItem>
 
         <GridItem className="skills-card" backgroundColor={"lightgray"} _hover={{ bgColor: "white" }} margin={"auto"} justifyContent={"center"} alignItems={"center"} boxShadow={"rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 604, 60, .2) 20px 20px 20px 10px"} border={"4px solid #98FB98"} p={"30px"} borderRadius={"8px"} >
-          <Feature icon={<Icon as={FaGithub} color={"black"} w={9} h={9} />} />
+          <Feature icon={<Icon as={FaGithub} className="skills-card-img" color={"black"} w={9} h={9} />} />
           <Text className="skills-card-name" fontWeight={"medium"}>GitHub</Text>
         </GridItem>
 
         <GridItem className="skills-card" backgroundColor={"lightgray"} _hover={{ bgColor: "white" }} margin={"auto"} justifyContent={"center"} alignItems={"center"} boxShadow={"rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 604, 60, .2) 20px 20px 20px 10px"} border={"1px solid #98FB98"} p={"30px"} borderRadius={"8px"}>
-          <Feature icon={<Icon as={SiNetlify} color={"blue.500"} w={9} h={9} />} />
+          <Feature icon={<Icon as={SiNetlify} className="skills-card-img" color={"blue.500"} w={9} h={9} />} />
           <Text className="skills-card-name" fontWeight={"medium"}>Netlify</Text>
         </GridItem>
 
         <GridItem className="skills-card" backgroundColor={"lightgray"} _hover={{ bgColor: "white" }} margin={"auto"} justifyContent={"center"} alignItems={"center"} boxShadow={"rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 604, 60, .2) 20px 20px 20px 10px"} border={"4px solid #98FB98"} p={"30px"} borderRadius={"8px"}>
-          <Feature icon={<Icon as={TbBrandVercel} color={"black"} w={10} h={10} />} />
+          <Feature icon={<Icon as={TbBrandVercel} className="skills-card-img" color={"black"} w={10} h={10} />} />
           <Text className="skills-card-name" fontWeight={"medium"}>Vercel</Text>
         </GridItem>
 
