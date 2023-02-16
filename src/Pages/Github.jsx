@@ -6,7 +6,7 @@ import GitHubCalendar from 'react-github-calendar';
 const Github = () => {
   return (
     <Box  margin={"auto"} gap={"5px"} pb={{ base: "20px", md: "30px", lg: "100px" }}>
-        <Box fontSize={"50px"} pb={"20px"} fontWeight={"bold"} mb={"30px"}><u>Github</u></Box>
+        <Box fontSize={{ base: "30px", md: "40px", lg: "50px" }} pb={"20px"} fontWeight={"bold"} mb={"30px"}><u>Github</u></Box>
 
 
 

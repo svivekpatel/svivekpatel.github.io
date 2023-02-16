@@ -33,7 +33,7 @@ const Contact = () => {
   return (
     <Box id="contact">
       
-    <Box fontSize={"50px"} pb={"20px"} fontWeight={"bold"} mb={"30px"}><u>Contact</u></Box>
+    <Box fontSize={{ base: "30px", md: "40px", lg: "50px" }} pb={"20px"} fontWeight={"bold"} mb={"30px"}><u>Contact</u></Box>
 
     <Container maxW="full" mt={0} centerContent>
       <Flex>

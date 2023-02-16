@@ -41,7 +41,7 @@ function Projects() {
       };
   return (
     <Box pb={{ base: "20px", md: "30px", lg: "100px" }} >  
-        <Box fontSize={"50px"} fontWeight={"bold"} mb={"30px"}><u>Projects</u></Box>
+        <Box fontSize={{ base: "30px", md: "40px", lg: "50px" }} fontWeight={"bold"} mb={"30px"}><u>Projects</u></Box>
  <Container className="project-card" maxW={'95%'} py={10}>
     <Flex  gap={"15px"} columns={{ base: 1, md: 2 }}>
     <Flex boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px" >
