@@ -32,12 +32,14 @@ import {
 const Contact = () => {
   return (
     <Box id="contact">
+      
     <Box fontSize={"50px"} pb={"20px"} fontWeight={"bold"} mb={"30px"}><u>Contact</u></Box>
-    <Container maxW="full" mt={0} centerContent overflow="hidden" >
+
+    <Container maxW="full" mt={0} centerContent>
       <Flex>
         <Box
         border={"4px solid #98FB98"}
-        boxShadow={"rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px"}
+        boxShadow={"rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.20) 20px 20px 40px 2px"}
           bg="white"
           color="black"
           borderRadius="lg"
@@ -128,7 +130,7 @@ const Contact = () => {
                 </Box>
               </WrapItem>
               <WrapItem>
-                <Box bg="gray.200" borderRadius="lg">
+                <Box bg="lightgray" borderRadius="lg">
                   <Box m={8} color="#0B0E3F">
                     <VStack spacing={5}>
                       <FormControl id="name">
@@ -155,9 +157,6 @@ const Contact = () => {
                         <FormLabel>Message</FormLabel>
                         <Textarea
                           borderColor="gray"
-                          _hover={{
-                            borderRadius: 'gray.300',
-                          }}
                           placeholder="message"
                         />
                       </FormControl>
@@ -165,8 +164,7 @@ const Contact = () => {
                         <Button
                           variant="solid"
                           bg="#98FB75"
-                          color="black"
-                          _hover={{}}>
+                          color="black">
                           Send Message
                         </Button>
                       </FormControl>
@@ -179,6 +177,9 @@ const Contact = () => {
         </Box>
       </Flex>
     </Container>
+
+
+
     <Box mt={"20px"} boxShadow={"rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px"} p={"15px"} bg={"#98FB98"}>Designed with ❤ by Vivek Patel</Box>
     </Box>
   )

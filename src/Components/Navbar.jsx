@@ -9,10 +9,11 @@ import {
   useDisclosure,
   useColorModeValue,
   Stack,
+  Text,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 
-const Links = ['Home', 'About Me', 'Skills', 'Projects', 'Contact'];
+const Links = ['Home', 'About Me', 'Skills', 'Project', 'Contact'];
 
 const NavLink = ({ children }) => (
   <Link
@@ -32,8 +33,8 @@ export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <div className={navStyles.nav} >
-      <Box id="nav-menu" bg={"#98FB98"} px={4}  boxShadow={"rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px"}>
+    <div className={navStyles.nav} id="nav-menu">
+      <Box bg={"#98FB98"} px={4}  boxShadow={"rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px"}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}
@@ -43,7 +44,7 @@ export default function Navbar() {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={'center'}>
-            <Box fontSize={20} fontWeight={"bold"}>VIVEK</Box>
+            <Box border={"1px solid white"} boxShadow={"rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px"} pl={"8px"} pr={"8px"} fontSize={20} fontWeight={"bold"}> VIVEK </Box>
             <HStack
               as={'nav'}
               spacing={4}
