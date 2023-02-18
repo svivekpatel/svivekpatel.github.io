@@ -25,15 +25,13 @@ import {
     MdLocationOn,
     MdFacebook,
     MdOutlineEmail,
-    MdInsertComment,
-    Md10K,
   } from 'react-icons/md';
   import { BsGithub, BsPerson, BsLinkedin } from 'react-icons/bs';
 const Contact = () => {
   return (
     <Box id="contact">
       
-    <Box fontSize={{ base: "30px", md: "40px", lg: "50px" }} pb={"20px"} fontWeight={"bold"} mb={"30px"}><u>Contact</u></Box>
+    <Box fontSize={{ base: "30px", md: "40px", lg: "50px" }} pb={"20px"} fontWeight={"bold"} mb={"30px"} color={"gray.600"}><u>Contact</u></Box>
 
     <Container maxW="full" mt={0} centerContent>
       <Flex>
@@ -62,8 +60,8 @@ const Contact = () => {
                         width="200px"
                         variant="ghost"
                         color="gray.600"
-                        _hover={{ border: '2px solid green' }}
-                        leftIcon={<MdPhone color="green" size="20px" />}>
+                        _hover={{ border: '2px solid #98FB98' }}
+                        leftIcon={<MdPhone size="20px" />}>
                         +91-6261405449
                       </Button>
                       <Button
@@ -73,8 +71,8 @@ const Contact = () => {
                         width="200px"
                         variant="ghost"
                         color="gray.600"
-                        _hover={{ border: '2px solid green' }}
-                        leftIcon={<MdEmail color="green" size="20px" />}>
+                        _hover={{ border: '2px solid #98FB98' }}
+                        leftIcon={<MdEmail size="20px" />}>
                         vp133202@gmail.com
                       </Button>
                       <Button
@@ -83,8 +81,8 @@ const Contact = () => {
                         width="200px"
                         variant="ghost"
                         color="gray.600"
-                        _hover={{ border: '2px solid green' }}
-                        leftIcon={<MdLocationOn color="green" size="20px" />}>
+                        _hover={{ border: '2px solid #98FB98' }}
+                        leftIcon={<MdLocationOn size="20px" />}>
                         Madhya Pradesh, India
                       </Button>
                     </VStack>
@@ -95,7 +93,7 @@ const Contact = () => {
                     px={5}
                     alignItems="flex-start">
                     
-                    <Link href={"https://github.com/svivekpatel"} id="contact-github">
+                    <Link href={"https://github.com/svivekpatel" } target="_blank" id="contact-github">
                     <IconButton
                       aria-label="github"
                       variant="ghost"
@@ -105,7 +103,7 @@ const Contact = () => {
                       icon={<BsGithub size="28px" />}
                     />
                     </Link>
-                    <Link href={"https://www.linkedin.com/in/svivekpatel/"}  id="contact-linkedin">
+                    <Link href={"https://www.linkedin.com/in/svivekpatel/"} target="_blank" id="contact-linkedin">
                          <IconButton
                       aria-label="discord"
                       variant="ghost"
@@ -115,7 +113,7 @@ const Contact = () => {
                       icon={<BsLinkedin size="28px" />}
                     />
                   </Link>
-                    <Link href={"https://github.com/svivekpatel"}>
+                    <Link href={"https://github.com/svivekpatel"} target="_blank">
                     <IconButton
                       aria-label="facebook"
                       variant="ghost"
@@ -130,7 +128,7 @@ const Contact = () => {
                 </Box>
               </WrapItem>
               <WrapItem>
-                <Box bg="lightgray" borderRadius="lg">
+                <Box bg="gray.100" borderRadius="lg">
                   <Box m={8} color="#0B0E3F">
                     <VStack spacing={5}>
                       <FormControl id="name">
@@ -162,6 +160,8 @@ const Contact = () => {
                       </FormControl>
                       <FormControl id="name" float="right">
                         <Button
+                        p={"20px"}
+                        mt={"25px"}
                           variant="solid"
                           bg="#98FB75"
                           color="black">
@@ -180,7 +180,7 @@ const Contact = () => {
 
 
 
-    <Box mt={"20px"} boxShadow={"rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px"} p={"15px"} bg={"#98FB98"}>Designed with ❤ by Vivek Patel</Box>
+    <Box mt={"20px"} color={"gray.300"} boxShadow={"rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px"} p={"15px"} bg={"#017278"}>Designed with ❤ by Vivek Patel</Box>
     </Box>
   )
 }

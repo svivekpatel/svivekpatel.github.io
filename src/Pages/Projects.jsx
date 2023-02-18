@@ -19,6 +19,7 @@ import {
     Icon,
     useColorModeValue,
     Link,
+    SimpleGrid,
   } from '@chakra-ui/react';
   
 
@@ -41,36 +42,19 @@ function Projects() {
       };
   return (
     <Box pb={{ base: "20px", md: "30px", lg: "100px" }} >  
-        <Box fontSize={{ base: "30px", md: "40px", lg: "50px" }} fontWeight={"bold"} mb={"30px"}><u>Projects</u></Box>
+        <Box fontSize={{ base: "30px", md: "40px", lg: "50px" }} fontWeight={"bold"} mb={"30px"} color={"gray.600"}><u>Projects</u></Box>
  <Container className="project-card" maxW={'95%'} py={10}>
-    <Flex  gap={"15px"} columns={{ base: 1, md: 2 }}>
-    <Flex boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px" >
-        <Image
-          p={"15px"}
-          border={"10px solid #98FB98"}
-          alt={'Image'} 
-          src={
-            'myntra.jpg'
-          }
-        />
+    <SimpleGrid gap={"15px"} columns={{ base: 1, md: 1, lg: 2 }}>
+    <Flex  boxShadow={"rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px"} >
+        <Image border={{ base: "2px solid #98FB98", md: "5px solid #98FB98", lg: "8px solid #98FB98" }} alt={'Image'} src={ 'myntra.jpg' }/>
       </Flex>
       <Stack className="project-tech-stack" spacing={5} rounded={'md'} p={"15px"} boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"} backgroundColor={"white"} >
-       
         <Heading className="project-title">Myntra Clone</Heading>
         <Text color={'gray.500'} fontSize={'lg'} className="project-description">
         Myntra is an online fashion and lifestyle products store. Best online shopping site in India for fashion.
         </Text>
-        <Stack
-          spacing={4}
-          divider={
-            <StackDivider
-              borderColor={useColorModeValue('gray.100', 'gray.700')}
-            />
-          }>
-          <Feature
-            icon={
-              <Icon as={FaReact} color={'yellow.500'} w={5} h={5} />
-            }
+        <Stack spacing={4} divider={ <StackDivider borderColor={useColorModeValue('gray.100', 'gray.700')}/> }>
+          <Feature icon={<Icon as={FaReact} color={'yellow.500'} w={5} h={5} />}
             iconBg={useColorModeValue('yellow.100', 'yellow.900')}
             text={'React'}
           />
@@ -114,11 +98,11 @@ function Projects() {
        
       </Stack>
      
-    </Flex>
+    </SimpleGrid>
   </Container>
 {/* toggl */}
   <Container className="project-card" maxW={'90%'} py={10}>
-    <Flex  gap={"15px"} columns={{ base: 1, md: 2 }}>
+    <SimpleGrid  gap={"15px"} columns={{ base: 1, md: 1, lg:2 }}>
       <Stack spacing={5} rounded={'md'} p={"15px"} boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"} backgroundColor={"white"} >
        
         <Heading className="project-title">Toggl-Track Clone</Heading>
@@ -179,25 +163,23 @@ function Projects() {
         </Flex>
        
       </Stack>
-      <Flex boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px" >
+      <Flex boxShadow={"rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px"} >
         <Image
-          p={"15px"}
-          border={"10px solid #98FB98"}
+          border={{ base: "2px solid #98FB98", md: "5px solid #98FB98", lg: "8px solid #98FB98" }}
           alt={'Image'} 
           src={
             'toggl2.jpg'
           }
         />
       </Flex>
-    </Flex>
+    </SimpleGrid>
   </Container>
 {/* shine */}
   <Container className="project-card" maxW={'95%'} py={10}>
-    <Flex  gap={"15px"} columns={{ base: 1, md: 2 }}>
-    <Flex boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px" >
+    <SimpleGrid  gap={"15px"} columns={{ base: 1, md: 1, lg:2 }}>
+    <Flex boxShadow={"rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px"} >
         <Image
-          p={"15px"}
-          border={"10px solid #98FB98"}
+          border={{ base: "2px solid #98FB98", md: "5px solid #98FB98", lg: "8px solid #98FB98" }}
           alt={'Image'} 
           src={
             'shine2.jpg'
@@ -263,11 +245,11 @@ function Projects() {
        
       </Stack>
     
-    </Flex>
+    </SimpleGrid>
   </Container>
 {/* trips */}
 <Container className="project-card" maxW={'90%'} py={10}>
-    <Flex  gap={"15px"} columns={{ base: 1, md: 2 }}>
+    <SimpleGrid  gap={"15px"} columns={{ base: 1, md: 1, lg:2 }}>
       <Stack spacing={5} rounded={'md'} p={"15px"} boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"} backgroundColor={"white"} >
        
         <Heading className="project-title">TripVillas Clone</Heading>
@@ -328,17 +310,16 @@ function Projects() {
         </Flex>
        
       </Stack>
-      <Flex boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px" >
+      <Flex boxShadow={"rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px"} >
         <Image
-        border={"10px solid #98FB98"}
-          p={"15px"}
+          border={{ base: "2px solid #98FB98", md: "5px solid #98FB98", lg: "8px solid #98FB98" }}
           alt={'Image'} 
           src={
             'trips.jpg'
           }
         />
       </Flex>
-    </Flex>
+    </SimpleGrid>
   </Container>
     </Box>
    

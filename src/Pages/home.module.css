@@ -1,0 +1,35 @@
+
+.mySidenav a {
+    position: fixed;
+    left: -50px;
+    margin-top: 450px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    font-size: 20px;
+    color: white;
+  }
+  
+  .mySidenav a:hover {
+    left: 0;
+  }
+  
+  .about {
+    top: 20px;
+    background-color: #04AA6D;
+  }
+  
+  .blog {
+    top: 80px;
+    background-color: #2196F3;
+  }
+  
+  .projects {
+    top: 140px;
+    background-color: #f44336;
+  }
+  
+  .contact {
+    top: 200px;
+    background-color: #555
+  }

@@ -30,7 +30,7 @@ const Feature = ({ title, text, icon }) => {
 function Skills() {
 return <Box id="skills" pb={{ base: "20px", md: "30px", lg: "100px" }} >
 
-   <Box fontSize={{ base: "30px", md: "40px", lg: "50px" }} fontWeight={"bold"} mb={"30px"}><u>Skills</u></Box>
+   <Box fontSize={{ base: "30px", md: "40px", lg: "50px" }} fontWeight={"bold"} mb={"30px"} color={"gray.600"}><u>Skills</u></Box>
 
      <Box p={4} w={"90%"} margin={"auto"} mb={{ base: "20px", md: "30px", lg: "100px" }}>
 
@@ -105,7 +105,7 @@ return <Box id="skills" pb={{ base: "20px", md: "30px", lg: "100px" }} >
 
 
 
-    <Box fontSize={{ base: "30px", md: "40px", lg: "50px" }} fontWeight={"bold"} mb={"30px"}><u>Tools</u></Box>
+    <Box fontSize={{ base: "30px", md: "40px", lg: "50px" }} fontWeight={"bold"} mb={"30px"} color={"gray.600"}><u>Tools</u></Box>
 
     <Box p={4} w={"90%"} margin={"auto"}>
 
