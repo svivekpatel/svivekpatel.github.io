@@ -46,7 +46,16 @@ function Projects() {
  <Container className="project-card" maxW={'95%'} py={10}>
     <SimpleGrid gap={"15px"} columns={{ base: 1, md: 1, lg: 2 }}>
     <Flex  boxShadow={"rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px"} >
-        <Image border={{ base: "2px solid #98FB98", md: "5px solid #98FB98", lg: "8px solid #98FB98" }} alt={'Image'} src={ 'myntra.jpg' }/>
+      <a href="myntra.jpg"  target="_blank">
+      <Image
+          border={{ base: "2px solid #70956E", md: "5px solid #70956E", lg: "8px solid #70956E" }}
+          alt={'Image'} 
+          src={
+            'myntra.jpg'
+          }
+          h={"100%"}
+        />
+</a>
       </Flex>
       <Stack className="project-tech-stack" spacing={5} rounded={'md'} p={"15px"} boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"} backgroundColor={"white"} >
         <Heading className="project-title">Myntra Clone</Heading>
@@ -164,13 +173,16 @@ function Projects() {
        
       </Stack>
       <Flex boxShadow={"rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px"} >
-        <Image
-          border={{ base: "2px solid #98FB98", md: "5px solid #98FB98", lg: "8px solid #98FB98" }}
+      <a href="toggl2.jpg"  target="_blank">
+      <Image
+          border={{ base: "2px solid #70956E", md: "5px solid #70956E", lg: "8px solid #70956E" }}
           alt={'Image'} 
           src={
             'toggl2.jpg'
           }
+          h={"100%"}
         />
+</a>
       </Flex>
     </SimpleGrid>
   </Container>
@@ -178,13 +190,16 @@ function Projects() {
   <Container className="project-card" maxW={'95%'} py={10}>
     <SimpleGrid  gap={"15px"} columns={{ base: 1, md: 1, lg:2 }}>
     <Flex boxShadow={"rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px"} >
-        <Image
-          border={{ base: "2px solid #98FB98", md: "5px solid #98FB98", lg: "8px solid #98FB98" }}
+    <a href="shine2.jpg"  target="_blank">
+      <Image
+          border={{ base: "2px solid #70956E", md: "5px solid #70956E", lg: "8px solid #70956E" }}
           alt={'Image'} 
           src={
             'shine2.jpg'
           }
+          h={"100%"}
         />
+</a>
       </Flex>
       <Stack spacing={5} rounded={'md'} p={"15px"} boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"} backgroundColor={"white"} >
        
@@ -311,13 +326,17 @@ function Projects() {
        
       </Stack>
       <Flex boxShadow={"rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px"} >
-        <Image
-          border={{ base: "2px solid #98FB98", md: "5px solid #98FB98", lg: "8px solid #98FB98" }}
+      <a href="trips.jpg"  target="_blank">
+      <Image
+          border={{ base: "2px solid #70956E", md: "5px solid #70956E", lg: "8px solid #70956E" }}
           alt={'Image'} 
           src={
             'trips.jpg'
           }
+          h={"100%"}
         />
+</a>
+       
       </Flex>
     </SimpleGrid>
   </Container>

@@ -1,17 +1,24 @@
 
 .mySidenav a {
     position: fixed;
-    left: -50px;
-    margin-top: 450px;
-    transition: 0.3s;
-    padding: 15px;
-    width: 100px;
-    font-size: 20px;
-    color: white;
+    display: flex;
+    justify-content: end;
+    left: -74px;
+    margin-top: 460px;
+    transition: 0.7s;
+    padding: 9px;
+    width: 120px;
+    font-size: 30px;
+    color: rgb(241, 241, 241);
+    z-index: 1000;
   }
   
   .mySidenav a:hover {
-    left: 0;
+    left: 0px;
+    justify-content: start;
+    width: 60px;
+    padding: 16px;
+
   }
   
   .about {
@@ -20,16 +27,16 @@
   }
   
   .blog {
-    top: 80px;
+    top: 68px;
     background-color: #2196F3;
   }
   
   .projects {
-    top: 140px;
+    top: 116px;
     background-color: #f44336;
   }
   
   .contact {
-    top: 200px;
-    background-color: #555
+    top: 164px;
+    background-color: #555;
   }
