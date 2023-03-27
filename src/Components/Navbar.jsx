@@ -39,11 +39,11 @@ export default function Navbar() {
 
   return (
     <div className={navStyles.nav} id="nav-menu" >
-       <Box className="nav-link home">Home</Box>
+       {/* <Box className="nav-link home">Home</Box>
         <Box className="nav-link about">About</Box>
         <Box className="nav-link skills">Skills</Box>
         <Box className="nav-link projects">Projects</Box>
-        <Box className="nav-link contact">Contact</Box>
+        <Box className="nav-link contact">Contact</Box> */}
       <Box bg={"#017278"} px={4} color={"gray.300"} boxShadow={"rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px"}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
