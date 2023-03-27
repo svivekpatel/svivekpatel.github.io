@@ -63,18 +63,18 @@ function Projects() {
         Myntra is an online fashion and lifestyle products store. Best online shopping site in India for fashion.
         </Text>
         <Stack spacing={4} divider={ <StackDivider borderColor={useColorModeValue('gray.100', 'gray.700')}/> }>
-          <Feature class="project-tech-stack" icon={<Icon as={FaReact} color={'yellow.500'} w={5} h={5} />}
+          <Feature className="project-tech-stack" icon={<Icon as={FaReact} color={'yellow.500'} w={5} h={5} />}
             iconBg={useColorModeValue('yellow.100', 'yellow.900')}
             text={'React'}
           />
           <Feature
-          class="project-tech-stack"
+          className="project-tech-stack"
             icon={<Icon as={SiRedux} color={'green.500'} w={5} h={5} />}
             iconBg={useColorModeValue('green.100', 'green.900')}
             text={'Redux'}
           />
           <Feature
-          class="project-tech-stack"
+          className="project-tech-stack"
             icon={
               <Icon as={SiChakraui} color={'purple.500'} w={5} h={5} />
             }
@@ -128,7 +128,7 @@ function Projects() {
             />
           }>
           <Feature
-          class="project-tech-stack"
+          className="project-tech-stack"
             icon={
               <Icon as={DiHtml5} color={'yellow.500'} w={5} h={5} />
             }
@@ -136,13 +136,13 @@ function Projects() {
             text={'HTML'}
           />
           <Feature
-          class="project-tech-stack"
+          className="project-tech-stack"
             icon={<Icon as={DiCss3} color={'green.500'} w={5} h={5} />}
             iconBg={useColorModeValue('green.100', 'green.900')}
             text={'CSS'}
           />
           <Feature
-          class="project-tech-stack"
+          className="project-tech-stack"
             icon={
               <Icon as={SiJavascript} color={'purple.500'} w={5} h={5} />
             }
@@ -219,7 +219,7 @@ function Projects() {
             />
           }>
           <Feature
-          class="project-tech-stack"
+          className="project-tech-stack"
             icon={
               <Icon as={DiHtml5} color={'yellow.500'} w={5} h={5} />
             }
@@ -227,13 +227,13 @@ function Projects() {
             text={'HTML'}
           />
           <Feature
-          class="project-tech-stack"
+          className="project-tech-stack"
             icon={<Icon as={DiCss3} color={'green.500'} w={5} h={5} />}
             iconBg={useColorModeValue('green.100', 'green.900')}
             text={'CSS'}
           />
           <Feature
-          class="project-tech-stack"
+          className="project-tech-stack"
             icon={
               <Icon as={SiJavascript} color={'purple.500'} w={5} h={5} />
             }
@@ -285,7 +285,7 @@ function Projects() {
             />
           }>
           <Feature
-          class="project-tech-stack"
+          className="project-tech-stack"
             icon={
               <Icon as={FaReact} color={'yellow.500'} w={5} h={5} />
             }
@@ -293,13 +293,13 @@ function Projects() {
             text={'React'}
           />
           <Feature
-          class="project-tech-stack"
+          className="project-tech-stack"
             icon={<Icon as={SiRedux} color={'green.500'} w={5} h={5} />}
             iconBg={useColorModeValue('green.100', 'green.900')}
             text={'Redux'}
           />
           <Feature
-          class="project-tech-stack"
+          className="project-tech-stack"
             icon={
               <Icon as={SiChakraui} color={'purple.500'} w={5} h={5} />
             }
