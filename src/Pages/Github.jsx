@@ -11,11 +11,11 @@ const Github = () => {
 
 
 <Flex align={"center"} w={{ base: '100%', md: '80%', lg: '66%' }} h={ '250px' } margin={"auto"} bg={"gray.600"} boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px" marginBottom={"40px"} border={"10px solid gray"} justifyContent={"center"} p={"20px"}>
-<img  align="center" id="github-stats-card" src="https://github-readme-stats.vercel.app/api/top-langs?username=svivekpatel&show_icons=true&locale=en&layout=compact" alt="svivekpatel"  />
+<img  align="center" id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs?username=svivekpatel&show_icons=true&locale=en&layout=compact" alt="svivekpatel"  />
 </Flex>
 
 <Flex align={"center"} w={{ base: '100%', md: '80%', lg: '66%' }} h={ '250px' } margin={"auto"} bg={"gray.600"} boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px" marginBottom={"40px"} border={"10px solid gray"}  justifyContent={"center"} p={"20px"}>
-<img  align="center" id="github-top-langs" src="https://github-readme-stats.vercel.app/api?username=svivekpatel&show_icons=true&locale=en" alt="svivekpatel"/>
+<img  align="center"  id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=svivekpatel&show_icons=true&locale=en" alt="svivekpatel"/>
 </Flex>
 
 <Flex align={"center"} w={{ base: '100%', md: '80%', lg: '66%' }} h={ '250px' } margin={"auto"} bg={"gray.600"} boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px" marginBottom={"40px"} border={"10px solid gray"}  justifyContent={"center"} p={"20px"}>

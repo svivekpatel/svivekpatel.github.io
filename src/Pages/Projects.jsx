@@ -57,22 +57,24 @@ function Projects() {
         />
 </a>
       </Flex>
-      <Stack className="project-tech-stack" spacing={5} rounded={'md'} p={"15px"} boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"} backgroundColor={"white"} >
+      <Stack spacing={5} rounded={'md'} p={"15px"} boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px"} backgroundColor={"white"} >
         <Heading className="project-title">Myntra Clone</Heading>
         <Text color={'gray.500'} fontSize={'lg'} className="project-description">
         Myntra is an online fashion and lifestyle products store. Best online shopping site in India for fashion.
         </Text>
         <Stack spacing={4} divider={ <StackDivider borderColor={useColorModeValue('gray.100', 'gray.700')}/> }>
-          <Feature icon={<Icon as={FaReact} color={'yellow.500'} w={5} h={5} />}
+          <Feature class="project-tech-stack" icon={<Icon as={FaReact} color={'yellow.500'} w={5} h={5} />}
             iconBg={useColorModeValue('yellow.100', 'yellow.900')}
             text={'React'}
           />
           <Feature
+          class="project-tech-stack"
             icon={<Icon as={SiRedux} color={'green.500'} w={5} h={5} />}
             iconBg={useColorModeValue('green.100', 'green.900')}
             text={'Redux'}
           />
           <Feature
+          class="project-tech-stack"
             icon={
               <Icon as={SiChakraui} color={'purple.500'} w={5} h={5} />
             }
@@ -119,7 +121,6 @@ function Projects() {
         Toggl Track is a time tracking app that allows you to track your daily activities across different platforms.
         </Text>
         <Stack
-          className="project-tech-stack"
           spacing={4}
           divider={
             <StackDivider
@@ -127,6 +128,7 @@ function Projects() {
             />
           }>
           <Feature
+          class="project-tech-stack"
             icon={
               <Icon as={DiHtml5} color={'yellow.500'} w={5} h={5} />
             }
@@ -134,11 +136,13 @@ function Projects() {
             text={'HTML'}
           />
           <Feature
+          class="project-tech-stack"
             icon={<Icon as={DiCss3} color={'green.500'} w={5} h={5} />}
             iconBg={useColorModeValue('green.100', 'green.900')}
             text={'CSS'}
           />
           <Feature
+          class="project-tech-stack"
             icon={
               <Icon as={SiJavascript} color={'purple.500'} w={5} h={5} />
             }
@@ -208,7 +212,6 @@ function Projects() {
         Shine.com is an innovative and 2nd-largest, fastest growing online job and recruitment portal in India.
         </Text>
         <Stack
-          className="project-tech-stack"
           spacing={4}
           divider={
             <StackDivider
@@ -216,6 +219,7 @@ function Projects() {
             />
           }>
           <Feature
+          class="project-tech-stack"
             icon={
               <Icon as={DiHtml5} color={'yellow.500'} w={5} h={5} />
             }
@@ -223,11 +227,13 @@ function Projects() {
             text={'HTML'}
           />
           <Feature
+          class="project-tech-stack"
             icon={<Icon as={DiCss3} color={'green.500'} w={5} h={5} />}
             iconBg={useColorModeValue('green.100', 'green.900')}
             text={'CSS'}
           />
           <Feature
+          class="project-tech-stack"
             icon={
               <Icon as={SiJavascript} color={'purple.500'} w={5} h={5} />
             }
@@ -272,7 +278,6 @@ function Projects() {
         TripVillas is the Largest holiday home rental portal in Asia. with over 100000 holiday home destinations.
         </Text>
         <Stack
-          className="project-tech-stack"
           spacing={4}
           divider={
             <StackDivider
@@ -280,6 +285,7 @@ function Projects() {
             />
           }>
           <Feature
+          class="project-tech-stack"
             icon={
               <Icon as={FaReact} color={'yellow.500'} w={5} h={5} />
             }
@@ -287,11 +293,13 @@ function Projects() {
             text={'React'}
           />
           <Feature
+          class="project-tech-stack"
             icon={<Icon as={SiRedux} color={'green.500'} w={5} h={5} />}
             iconBg={useColorModeValue('green.100', 'green.900')}
             text={'Redux'}
           />
           <Feature
+          class="project-tech-stack"
             icon={
               <Icon as={SiChakraui} color={'purple.500'} w={5} h={5} />
             }
