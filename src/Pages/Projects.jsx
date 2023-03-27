@@ -26,7 +26,7 @@ import {
 function Projects() {
     const Feature = ({ text, icon, iconBg }) => {
         return (
-          <Stack id="projects" direction={'row'} align={'center'}> 
+          <Stack direction={'row'} align={'center'}> 
             <Flex
               w={8}
               h={8}
@@ -41,7 +41,7 @@ function Projects() {
         );
       };
   return (
-    <Box pb={{ base: "20px", md: "30px", lg: "100px" }} >  
+    <Box pb={{ base: "20px", md: "30px", lg: "100px" }} id="projects">  
         <Box fontSize={{ base: "30px", md: "40px", lg: "50px" }} fontWeight={"bold"} mb={"30px"} color={"gray.600"}><u>Projects</u></Box>
  <Container className="project-card" maxW={'95%'} py={10}>
     <SimpleGrid gap={"15px"} columns={{ base: 1, md: 1, lg: 2 }}>

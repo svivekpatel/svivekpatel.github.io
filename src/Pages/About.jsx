@@ -10,8 +10,11 @@ import {
   import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
 function About(){
+  const handleResume = () => {
+    window.open("https://drive.google.com/file/d/1jmx75Emk5SPGbWYykgeXXDgTlXQglI4I/view?usp=sharing","_blank")
+  }
     return (
-      <Box id="about" className="about section" pt={"20px"}>
+      <Box id="about" className="about section" pt={"20px"} >
         <Box fontSize={{ base: "30px", md: "40px", lg: "50px" }} color={"gray.600"} fontWeight={"bold"} ><u>About</u></Box>
 <Stack mt={{lg:"-80px"}} minH={'100vh'} direction={{ base: 'column', md: 'row' }}>       
         <Flex p={8} flex={1} align={'center'} justify={'center'}>
@@ -31,7 +34,7 @@ function About(){
             </Text>
             <Flex alignItems={'center'} >
           <a id="resume-link-2" href="Vivek-Patel-Resume.pdf" target="_blank" download>
-              <Button id="resume-button-2" mr={"20px"}>Resume</Button>
+              <Button id="resume-button-2" mr={"20px"} onClick={handleResume}>Resume</Button>
             </a>  
             <a id="resume-link-2" p={"0px"} href="https://www.linkedin.com/in/svivekpatel/" target="_blank">
               <Button id="resume-button-2" mr={"20px"}><AiFillLinkedin size={"30"}/></Button>
