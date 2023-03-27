@@ -15,8 +15,9 @@ import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 const Links = ['Home', 'About', 'Skills', 'Projects', 'Contact'];
 
 // Updated NavLink component to use href instead of Link
-const NavLink = ({ children, href }) => (
+const NavLink = ({ children, href, className}) => (
   <a
+    className={`nav-link ${className}`}  
     href={href}
     px={2}
     py={1}
@@ -77,7 +78,7 @@ export default function Navbar() {
             <Stack as={'nav'} spacing={4}>
               {/* Updated NavLink components to use href with corresponding section id */}
               {Links.map((link) => (
-                <NavLink key={link} href={`#${link.split(" ").join("").toLowerCase()}`}>{link}</NavLink>
+                <NavLink key={link} href={`#${link.split(" ").join("").toLowerCase()}`} className={`nav-link ${link.split(" ").join("").toLowerCase()}`}>{link}</NavLink>
               ))}
             </Stack>
           </Box>
