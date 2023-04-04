@@ -11,7 +11,7 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 
-const Links = [{title:"Home",className:"nav-link home"},{title:"About",className:"nav-link about"},{title:"Skills",className:"nav-link skills"},{title:"Projects",className:"nav-link projects"},{title:"Contact",className:"nav-link contact"}]
+const Links = [{ title: "Home", clas: "nav-link home" }, { title: "About", clas: "nav-link about" }, { title: "Skills", clas: "nav-link skills" }, { title: "Projects", clas: "nav-link projects" }, { title: "Contact", clas: "nav-link contact" }]
 
 // const Links = ['Home', 'About', 'Skills', 'Projects', 'Contact'];
 
@@ -25,7 +25,7 @@ const NavLink = ({ children, href }) => (
       textDecoration: 'none',
       bg: useColorModeValue('gray.200', 'gray.700'),
     }}
-    >
+  >
     {children}
   </a>
 );
@@ -34,7 +34,7 @@ export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const handleResume = () => {
-    window.open("https://drive.google.com/file/d/1jmx75Emk5SPGbWYykgeXXDgTlXQglI4I/view?usp=sharing","_blank")
+    window.open("https://drive.google.com/file/d/1jmx75Emk5SPGbWYykgeXXDgTlXQglI4I/view?usp=sharing", "_blank")
   }
 
   return (
@@ -55,7 +55,7 @@ export default function Navbar() {
               spacing={4}
               display={{ base: 'none', md: 'flex' }}>
               {Links.map((link) => (
-                <NavLink key={link.title} href={`#${link.title.split(" ").join("").toLowerCase()}`} className={link.className}>{link.title}</NavLink>
+                <Box key={link.title} href={`#${link.title.split(" ").join("").toLowerCase()}`} className={link.clas}>{link.title}</Box>
               ))}
             </HStack>
           </HStack>
@@ -70,7 +70,7 @@ export default function Navbar() {
           <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
               {Links.map((link) => (
-                <NavLink key={link.title} href={`#${link.title.split(" ").join("").toLowerCase()}`} className={link.className}>{link.title}</NavLink>
+                <Box key={link.title} href={`#${link.title.split(" ").join("").toLowerCase()}`} className={link.clas}>{link.title}</Box>
               ))}
             </Stack>
           </Box>
