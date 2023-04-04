@@ -55,7 +55,7 @@ export default function Navbar() {
               spacing={4}
               display={{ base: 'none', md: 'flex' }}>
               {Links.map((link) => (
-                <Box key={link.title} href={`#${link.title.split(" ").join("").toLowerCase()}`} className={link.clas}>{link.title}</Box>
+                <a key={link.title} href={`#${link.title.split(" ").join("").toLowerCase()}`} className={link.clas}>{link.title}</a>
               ))}
             </HStack>
           </HStack>
