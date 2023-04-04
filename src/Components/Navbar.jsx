@@ -60,7 +60,7 @@ export default function Navbar() {
             </HStack>
           </HStack>
           <Flex alignItems={'center'}>
-            <a id="resume-link-1" href="Vivek-Patel-Resume.pdf" target="_blank" download>
+            <a id="resume-link-1" className="nav-link resume" href="Vivek-Patel-Resume.pdf" target="_blank" download>
               <Button id="resume-button-1" color={"black"} onClick={handleResume}>Resume</Button>
             </a>
           </Flex>
