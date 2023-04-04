@@ -7,17 +7,16 @@ import {
   Button,
   useDisclosure,
   useColorModeValue,
-  Stack,
-  Text,
+  Stack
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 
-const Links = ['Home', 'About', 'Skills', 'Projects', 'Contact'];
+const Links = [{title:"Home",className:"nav-link home"},{title:"About",className:"nav-link about"},{title:"Skills",className:"nav-link skills"},{title:"Projects",className:"nav-link projects"},{title:"Contact",className:"nav-link contact"}]
 
-// Updated NavLink component to use href instead of Link
-const NavLink = ({ children, href, className}) => (
+// const Links = ['Home', 'About', 'Skills', 'Projects', 'Contact'];
+
+const NavLink = ({ children, href }) => (
   <a
-    className={`nav-link ${className}`}  
     href={href}
     px={2}
     py={1}
@@ -40,11 +39,6 @@ export default function Navbar() {
 
   return (
     <div className={navStyles.nav} id="nav-menu" >
-       {/* <Box className="nav-link home">Home</Box>
-        <Box className="nav-link about">About</Box>
-        <Box className="nav-link skills">Skills</Box>
-        <Box className="nav-link projects">Projects</Box>
-        <Box className="nav-link contact">Contact</Box> */}
       <Box bg={"#017278"} px={4} color={"gray.300"} boxShadow={"rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px"}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
@@ -60,9 +54,8 @@ export default function Navbar() {
               as={'nav'}
               spacing={4}
               display={{ base: 'none', md: 'flex' }}>
-              {/* Updated NavLink components to use href with corresponding section id */}
               {Links.map((link) => (
-                <NavLink key={link} href={`#${link.split(" ").join("").toLowerCase()}`}>{link}</NavLink>
+                <NavLink key={link.title} href={`#${link.title.split(" ").join("").toLowerCase()}`} className={link.className}>{link.title}</NavLink>
               ))}
             </HStack>
           </HStack>
@@ -76,9 +69,8 @@ export default function Navbar() {
         {isOpen ? (
           <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
-              {/* Updated NavLink components to use href with corresponding section id */}
               {Links.map((link) => (
-                <NavLink key={link} href={`#${link.split(" ").join("").toLowerCase()}`} className={`nav-link ${link.split(" ").join("").toLowerCase()}`}>{link}</NavLink>
+                <NavLink key={link.title} href={`#${link.title.split(" ").join("").toLowerCase()}`} className={link.className}>{link.title}</NavLink>
               ))}
             </Stack>
           </Box>
