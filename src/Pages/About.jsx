@@ -33,7 +33,7 @@ function About(){
             A highly skilled and solution-oriented full-stack web developer with expertise in the MERN stack, strong analytical and creative skills, and a willingness to learn new technologies. Proven ability to work collaboratively in a team environment, seeking opportunities to contribute to the success of startups.
             </Text>
             <Flex alignItems={'center'} >
-            <Button id="resume-button-2" mr={"20px"} onClick={handleResume}> <a id="resume-link-2" href="Vivek-Patel-Resume.pdf" target="_blank" download>Resume
+            <Button id="resume-button-2" mr={"20px"} onClick={handleResume} href="Vivek-Patel-Resume.pdf" download> <a id="resume-link-2" href="Vivek-Patel-Resume.pdf" target="_blank" download>Resume
             </a> </Button>
           
             <a id="resume-link-2" p={"0px"} href="https://www.linkedin.com/in/svivekpatel/" target="_blank">
