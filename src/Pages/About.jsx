@@ -29,7 +29,7 @@ function About(){
               </Text>{' '}
             </Heading>
             <Text fontSize={{ base: 'md', lg: 'lg' }} color={'gray.500'} p={"20px"} bgColor={"white"} id="user-detail-intro">
-            A highly skilled and solution-oriented full-stack web developer with expertise in the MERN stack, strong analytical and creative skills, and a willingness to learn new technologies. Proven ability to work collaboratively in a team environment, seeking opportunities to contribute to the success of startups.
+            A highly skilled and solution-oriented full-stack web developer with expertise in the MERN stack, skilled in javaScript, React, mongoDB, Express, Node.js, ect. strong analytical and creative skills, and a willingness to learn new technologies. Proven ability to work collaboratively in a team environment, seeking opportunities to contribute to the success of startups.
             </Text>
             <Flex alignItems={'center'} >
             <Button id="resume-button-2" mr={"20px"} onClick={handleResume} href="Vivek-Patel-Resume.pdf" download> <a id="resume-link-2" href="Vivek-Patel-Resume.pdf" target="_blank" download>Resume
