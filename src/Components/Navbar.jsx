@@ -10,6 +10,7 @@ import {
   Stack
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
+import { handleResume } from "./Resume";
 
 const Links = [{ title: "Home", clas: "nav-link home" }, { title: "About", clas: "nav-link about" }, { title: "Skills", clas: "nav-link skills" }, { title: "Projects", clas: "nav-link projects" }, { title: "Contact", clas: "nav-link contact" }]
 
@@ -33,9 +34,7 @@ const NavLink = ({ children, href }) => (
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
-  const handleResume = () => {
-    window.open("https://drive.google.com/file/d/1jmx75Emk5SPGbWYykgeXXDgTlXQglI4I/view?usp=sharing", "_blank")
-  }
+
 
   return (
     <div className={navStyles.nav} id="nav-menu" >

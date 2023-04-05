@@ -8,11 +8,10 @@ import {
     Text,
   } from '@chakra-ui/react';
   import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import { handleResume } from '../Components/Resume';
 
 function About(){
-  const handleResume = () => {
-    window.open("https://drive.google.com/file/d/1jmx75Emk5SPGbWYykgeXXDgTlXQglI4I/view?usp=sharing","_blank")
-  }
+ 
     return (
       <Box id="about" className="about section" pt={"20px"} >
         <Box fontSize={{ base: "30px", md: "40px", lg: "50px" }} color={"gray.600"} fontWeight={"bold"} ><u>About</u></Box>
